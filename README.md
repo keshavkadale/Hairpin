@@ -1,19 +1,4 @@
-We also provide a WebRTC-based implementation for Hairpin at [hairpin-webrtc](https://github.com/hkust-spark/hairpin-webrtc).
 
-Hairpin is built on SparkRTC ns-3 library, which provides a simulation for the real-time video communication in ns-3.
-It provides congestion control algorithms (GCC, NADA) and forward error correction baselines.
-The main functionality has been implemented in the [ns3-sparkrtc](https://github.com/hkust-spark/ns3-sparkrtc) repository.
-This repository is used to generate the parameters of Hairpin and run the experiments.
-
-Please cite our paper if you use our simulator:
-```
-@inproceedings{nsdi2024hairpin,
-  title={Hairpin: Rethinking Packet Loss Recovery in Edge-based Interactive Video Streaming},
-  author={Meng, Zili and Kong, Xiao and Chen, Jing and Wang, Bo and Xu, Mingwei and Han, Rui and Liu, Honghao and Arun, Venkat and Hu, Hongxin and Wei, Xue},
-  booktitle={Proc. USENIX NSDI},
-  year={2024}
-}
-```
 
 The packet can be parsed with the `sparkrtc.lua` in Wireshark.
 
