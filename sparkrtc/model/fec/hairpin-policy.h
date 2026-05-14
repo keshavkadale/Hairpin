@@ -11,14 +11,13 @@ namespace ns3{
 
 class HairpinPolicy : public FECPolicy {
 public:
-    HairpinPolicy(uint16_t delayDdl, double_t qoeCoeffPow, bool isRtx, bool isCap);
+    HairpinPolicy(uint16_t delayDdl, double_t qoeCoeff, bool isRtx, bool isCap);
     HairpinPolicy();
     ~HairpinPolicy();
     static TypeId GetTypeId (void);
 private:
     static const std::vector<uint8_t> group_size_list;
     uint16_t k_delayDdl;
-    uint8_t k_qoeCoeffPow;
     double_t k_qoeCoeff;
     static const int GROUP_SIZE_ITVL = 5;
     int k_betaArraySize;
